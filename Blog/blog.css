@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #2c37cc;
+  }
+.toogle-button{
+    position: absolute;
+    top:.75rem;
+    right:1rem;
+    display: none;
+    flex-direction: column ;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toogle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toogle-button{
+      display : flex ;
+    }
+
+    .li{
+        display: none;
+        width: 100%;
+
+    }
+
+    .ul{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    
+}
+h3{
+    font-size: 26px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+
+ }
+.blue{
+    color: #1f98ff;
+}
+.bold{
+    font-weight: 500;
+}
+.about{
+   width:100% 
+}
+.aboutSectionWrapper{
+    width: 80%;
+    margin: auto;
+    display: block;
+    height: 800px;
+    background-image: url(womancoding.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blogPostInfo{
+    position: absolute;
+    bottom: 0;
+}
+.imageSectionWrapper h1{
+    color: white;
+    background-color: #1c2329 ;
+    width: 680px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 20px -60px;
+}
+.info{
+    color: white;
+    background-color: #1c2329 ;
+    width: 680px;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 40px -30px;
+    padding: 0.25em 0.25em 0.25em 3em;
+}
+.info p{
+    margin: 15 px 0;
+}
+.service p{
+    margin: 15 px 0; 
+}
+.services{
+    color: white;
+}
+.services:after{
+    content: "";
+    display: table;
+    clear: both;
+    height:1px;
+    margin: 0.5em auto 1em;
+    opacity: 0.25;
+}
+.service{
+    float: left;
+    width: 33.33%;
+    position: relative;
+}
+.myServices{
+    width: 80%;
+    margin: auto;
+    display: block;
+    height: 400px;
+    background-color: #274d6e ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+.sectionTitle{
+    color: white;
+    background-color: #1c2329 ;
+    width: 680px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 20px -60px;
+}
+.portfolio img {
+    height: 500px;
+    width: 500px;
+    transition: transform 750ms cubic-bezier(.5,0,.5,1),
+    opacity 250ms linear;
+    
+}
+.portfolio a {
+    text-decoration: none;
+}
+.portfolio img:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.portfolioItem{
+    background: #1c2329;
+    overflow: hidden;
+}
+
+.socials img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.socials a {
+    color: inherit;
+    text-decoration: none;
+}
+.socials img:hover {
+    opacity: 0.8;
+}
+.socials {
+    text-align: center;
+}
+form {
+    text-align: center;
+    margin-top: 0;
+}
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.myProjects{
+    background-color: #1c2329;
+    color: #bbb;
+    text-align: center;
+}
+.footer{
+    background: #1c2329;
+    padding: 2.5cm 0;
+}
